@@ -1,0 +1,198 @@
+.fundo {
+    background-image: url('../img/academia_mar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 20px;
+}
+.inicio {
+    color: #fff;
+    text-align: right;
+    width: 40%;
+    margin-left: auto;
+    margin-top: 90px;
+    font-size: 2rem; 
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+}
+
+.fundoo {
+        background-image: url('../img/fund.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        padding: 20px;
+}
+
+.horario {
+    color: #fff;
+    text-align: center;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 3rem; 
+    font-family: 'Impact', sans-serif;
+}
+
+
+/*  gemini */
+/* Estilização CSS (Ajustada) */
+
+/* Estilo geral para centralizar os quadrantes */
+.container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilo dos quadrantes (Dimensões Aumentadas) */
+.quadrante {
+    /* Dimensões aumentadas: de 250px para 400px de exemplo */
+    width: 400px; /* Nova Largura */
+    height: 300px; /* Nova Altura */
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: relative;
+    text-align: center;
+    /* Ajuste o line-height para a nova altura (300px) para centralizar o texto */
+    line-height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Os estilos .overlay e .quadrante:hover .overlay permanecem os mesmos */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.quadrante:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Fim do gemini */
+
+/* 4 imagens */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de cima: 2 imagens à esquerda + área de texto à direita */
+.top-section {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+.image-quadrants-top {
+    display: flex;
+    flex: 2; /* Ocupa 2/3 da largura */
+    gap: 10px; /* Espaço entre as duas imagens de cima */
+}
+
+.top-quadrant {
+    flex: 1;
+    /* Garante que o item ocupe o mesmo espaço */
+}
+
+.text-area {
+    flex: 1; /* Ocupa 1/3 da largura */
+    padding: 15px;
+    background-color: #e9ecef;
+    border-left: 2px solid #ccc;
+}
+
+/* Seção de baixo: 2 imagens centralizadas */
+.bottom-section {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 20px; /* Espaço entre as duas imagens de baixo */
+    padding: 10px 0;
+}
+
+.bottom-quadrant {
+    width: 45%; /* Define a largura para as imagens de baixo (ajuste conforme necessário) */
+}
+
+/* Estilo comum para os contêineres de imagem */
+.quadrant {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    height: 250px; /* Altura fixa para todos os quadrantes */
+    overflow: hidden; /* Garante que a imagem não saia do limite */
+}
+
+.quadrant img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    display: block;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Fim das 4 imagens */
+
+/* final */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.service-item { /* Mudança aqui: de .servico para .service-item */
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background-color: #f9f9f9;
+}
+.whatsapp-cta { /* Mudança aqui: de .whatsapp-btn para .whatsapp-cta */
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.whatsapp-cta:hover {
+    background-color: #128c7e;
+}
+.contact-section { /* Nova classe para a seção de contato/botão */
+    text-align: center;
+    margin-top: 40px;
+}
